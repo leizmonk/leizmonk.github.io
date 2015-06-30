@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Just the Basics Weather</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic' rel='stylesheet' type='text/css'>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>	
+	<script src="static/js/search.js"></script>	
+</head>
+
+<body>
+<div class="wrapper">
+
+	<div class="row">
+		<div class="col-md-3 spacer"></div>
+	    <div class="col-md-6">
+	    	<h1>Search Weather for a Location</h1>
+	        <form method="GET" id="search-form">
+	            <div class="fieldWrapper" id="the_query">
+	            <input type="text" id="id_search_location"></input>
+	            <input type="submit" value="Search" class="btn btn-primary">
+	            </div>
+	        </form>
+	    </div>
+		<div class="col-md-3 spacer"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3 spacer"></div>
+		<div class="col-md-6">
+			<div class="basic-info">
+				<h4>Current Weather for <span id="loc_name"></span> <span id="country"></span></h4>
+				<p>Latitude: <span id="lat"></span>º | Longitude: <span id="lon"></span>º</p>
+				<p>Observed at: <span id="datetime"></span></p>
+			</div>
+
+			<center>
+			<div class="weather-conditions">
+				<table class="conditions-table">
+					<tr>
+						<td>Temperature</td>
+						<td id="temp-far">ºF</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td id="temp-cel"></td>
+					</tr>				
+					<tr>
+						<td>Current Conditions</td>
+						<td id="con"></td>
+					</tr>
+					<tr>
+						<td>Humidity</td>
+						<td id="hum">%</td>
+					</tr>
+					<tr>
+						<td>Wind Speed</td>
+						<td id="wind">mph</td>
+					</tr>
+					<tr>
+						<td>Wind Direction</td>
+						<td id="wind-dir"><div id="cardinal-dir"></div></td>
+					</tr>		
+					<tr>
+						<td>Pressure</td>
+						<td id="pres">mb</td>
+					</tr>
+				</table>
+			</div>
+			</center>
+		</div>
+		<div class="col-md-3 spacer"></div>
+	</div>
+</div>
+
+</body>
+
+</html>
+

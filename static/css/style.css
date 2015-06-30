@@ -1,0 +1,50 @@
+li a {
+    color: green;
+}
+
+.basic-info {
+	font-size: 18px;
+}
+
+body {
+	background: url('../imgs/few-clouds.jpg') no-repeat center center fixed;
+	font-family: 'Titillium Web', 'Calibri', 'Arial', sans-serif;
+	-webkit-transition: 'opacity 0.3s';
+    -moz-transition: 'opacity 0.3s';
+    -o-transition: 'opacity 0.3s';
+    transition-property: 'opacity, left';
+    transition-duration: '3s, 5s';
+    -webkit-background-size: 'cover';
+    -moz-background-size: 'cover';
+    -o-background-size: 'cover';
+    background-size: 'cover';
+}
+
+.conditions-table {
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.conditions-table tr td:nth-child(odd) {
+	padding-right: 25px;
+}
+
+#con, #temp-far {
+	font-size: 30px;
+}
+
+ul.file-info {
+	list-style-type: none! important;
+	padding-left: 0px; 
+}
+
+.wrapper { 
+	padding-top: 10%;
+	text-align: center; 
+}
+
+.wrapper .col-md-6 { 
+	background-color: rgba(255, 255, 255, 0.77);
+}
+
